@@ -108,9 +108,6 @@ class StaffController extends Controller
      */
     public function destroy(Staff $staff)
     {
-        var_dump($staff);
-        exit;
-
         $staff->delete();
 
         return redirect()->route('staff.index')
