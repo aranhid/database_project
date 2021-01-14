@@ -10,6 +10,9 @@
             <li>
                 <a href="{{ route('staff.index') }}">Staff</a>
             </li>
+            <li>
+                <a href="{{ route('clients.index') }}">Clients</a>
+            </li>
         </ul>
     </div>
 @endsection

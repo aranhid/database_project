@@ -22,3 +22,6 @@ Route::resource('staff', StaffController::class);
 
 Use App\Http\Controllers\PositionController;
 Route::resource('positions', PositionController::class);
+
+Use App\Http\Controllers\ClientController;
+Route::resource('clients', ClientController::class);
