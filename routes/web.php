@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+Use App\Http\Controllers\StaffController;
+Route::resource('staff', StaffController::class);
+
+Use App\Http\Controllers\PositionController;
+Route::resource('positions', PositionController::class);
