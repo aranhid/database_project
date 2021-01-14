@@ -28,3 +28,6 @@ Route::resource('clients', ClientController::class);
 
 Use App\Http\Controllers\CarManufacturerController;
 Route::resource('car_manufacturers', CarManufacturerController::class);
+
+Use App\Http\Controllers\CarModelController;
+Route::resource('car_models', CarModelController::class);
