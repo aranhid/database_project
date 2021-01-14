@@ -14,7 +14,7 @@ class PositionController extends Controller
      */
     public function index()
     {
-        $positions = position::latest()->paginate(5);
+        $positions = Position::latest()->paginate(5);
 
         return view('positions.index', compact('positions'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
@@ -42,10 +42,10 @@ class PositionController extends Controller
             'name' => 'required',
         ]);
 
-        position::create($request->all());
+        Position::create($request->all());
 
         return redirect()->route('positions.index')
-            ->with('success', 'position created successfully.');
+            ->with('success', 'Position created successfully.');
     }
 
     /**
@@ -85,7 +85,7 @@ class PositionController extends Controller
         $position->update($request->all());
 
         return redirect()->route('positions.index')
-            ->with('success', 'position updated successfully');
+            ->with('success', 'Position updated successfully');
     }
 
     /**
@@ -99,6 +99,6 @@ class PositionController extends Controller
         $position->delete();
 
         return redirect()->route('positions.index')
-            ->with('success', 'position deleted successfully');
+            ->with('success', 'Position deleted successfully');
     }
 }
