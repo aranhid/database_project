@@ -13,6 +13,9 @@
             <li>
                 <a href="{{ route('clients.index') }}">Clients</a>
             </li>
+            <li>
+                <a href="{{ route('car_manufacturers.index') }}">Car manufacturers</a>
+            </li>
         </ul>
     </div>
 @endsection

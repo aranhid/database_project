@@ -25,3 +25,6 @@ Route::resource('positions', PositionController::class);
 
 Use App\Http\Controllers\ClientController;
 Route::resource('clients', ClientController::class);
+
+Use App\Http\Controllers\CarManufacturerController;
+Route::resource('car_manufacturers', CarManufacturerController::class);
