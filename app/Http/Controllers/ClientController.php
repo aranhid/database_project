@@ -39,12 +39,12 @@ class ClientController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'firstname',
-            'secondname',
-            'lastname',
-            'phone',
-            'email',
-            'birth_date',
+            'firstname' => 'required',
+            'secondname' => 'required',
+            'lastname' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'birth_date' => 'required',
         ]);
 
         Client::create($request->all());
@@ -85,12 +85,12 @@ class ClientController extends Controller
     public function update(Request $request, Client $client)
     {
         $request->validate([
-            'firstname',
-            'secondname',
-            'lastname',
-            'phone',
-            'email',
-            'birth_date',
+            'firstname' => 'required',
+            'secondname' => 'required',
+            'lastname' => 'required',
+            'phone' => 'required',
+            'email' => 'required',
+            'birth_date' => 'required',
         ]);
         $client->update($request->all());
 
@@ -106,7 +106,7 @@ class ClientController extends Controller
      */
     public function destroy(Client $client)
     {
-        $position->delete();
+        $client->delete();
 
         return redirect()->route('clients.index')
             ->with('success', 'Client deleted successfully');
