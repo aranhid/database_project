@@ -3,15 +3,37 @@
 @section('content')
     <h2>Databases</h2>
     <div>
+        <h4>Orders</h4>
         <ul>
             <li>
-                <a href="{{ route('positions.index') }}">Positions</a>
+                <a href="{{ route('orders.index') }}">Orders</a>
+            </li>
+            <li>
+                <a href="{{ route('payments.index') }}">Payments</a>
+            </li>
+            <li>
+                <a href="{{ route('payment_methods.index') }}">Payment methods</a>
+            </li>
+        </ul>
+        <h4>Staff and clients</h4>
+        <ul>
+            <li>
+                <a href="{{ route('clients.index') }}">Clients</a>
             </li>
             <li>
                 <a href="{{ route('staff.index') }}">Staff</a>
             </li>
             <li>
-                <a href="{{ route('clients.index') }}">Clients</a>
+                <a href="{{ route('positions.index') }}">Positions</a>
+            </li>
+        </ul>
+        <h4>Cars</h4>
+        <ul>
+            <li>
+                <a href="{{ route('cars.index') }}">Cars</a>
+            </li>
+            <li>
+                <a href="{{ route('test_drives.index') }}">Test drives</a>
             </li>
             <li>
                 <a href="{{ route('car_manufacturers.index') }}">Car manufacturers</a>
@@ -42,21 +64,6 @@
             </li>
             <li>
                 <a href="{{ route('car_states.index') }}">Car states</a>
-            </li>
-            <li>
-                <a href="{{ route('cars.index') }}">Cars</a>
-            </li>
-            <li>
-                <a href="{{ route('test_drives.index') }}">Test drives</a>
-            </li>
-            <li>
-                <a href="{{ route('orders.index') }}">Orders</a>
-            </li>
-            <li>
-                <a href="{{ route('payment_methods.index') }}">Payment methods</a>
-            </li>
-            <li>
-                <a href="{{ route('payments.index') }}">Payments</a>
             </li>
         </ul>
     </div>
