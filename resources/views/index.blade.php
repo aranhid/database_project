@@ -34,6 +34,9 @@
             <li>
                 <a href="{{ route('car_transmission_types.index') }}">Car transmission types</a>
             </li>
+            <li>
+                <a href="{{ route('fuel_types.index') }}">Fuel types</a>
+            </li>
         </ul>
     </div>
 @endsection

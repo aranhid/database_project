@@ -46,3 +46,6 @@ Route::resource('car_drive_types', CarDriveTypeController::class);
 
 Use App\Http\Controllers\CarTransmissionTypeController;
 Route::resource('car_transmission_types', CarTransmissionTypeController::class);
+
+Use App\Http\Controllers\FuelTypeController;
+Route::resource('fuel_types', FuelTypeController::class);
