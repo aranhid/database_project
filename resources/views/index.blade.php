@@ -55,6 +55,9 @@
             <li>
                 <a href="{{ route('payment_methods.index') }}">Payment methods</a>
             </li>
+            <li>
+                <a href="{{ route('payments.index') }}">Payments</a>
+            </li>
         </ul>
     </div>
 @endsection

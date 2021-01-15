@@ -67,3 +67,6 @@ Route::resource('orders', OrderController::class);
 
 Use App\Http\Controllers\PaymentMethodController;
 Route::resource('payment_methods', PaymentMethodController::class);
+
+Use App\Http\Controllers\PaymentController;
+Route::resource('payments', PaymentController::class);
