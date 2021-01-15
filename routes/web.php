@@ -43,3 +43,6 @@ Route::resource('car_body_colors', CarBodyColorController::class);
 
 Use App\Http\Controllers\CarDriveTypeController;
 Route::resource('car_drive_types', CarDriveTypeController::class);
+
+Use App\Http\Controllers\CarTransmissionTypeController;
+Route::resource('car_transmission_types', CarTransmissionTypeController::class);

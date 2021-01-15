@@ -31,6 +31,9 @@
             <li>
                 <a href="{{ route('car_drive_types.index') }}">Car drive types</a>
             </li>
+            <li>
+                <a href="{{ route('car_transmission_types.index') }}">Car transmission types</a>
+            </li>
         </ul>
     </div>
 @endsection
