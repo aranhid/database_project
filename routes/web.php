@@ -58,3 +58,6 @@ Route::resource('car_states', CarStateController::class);
 
 Use App\Http\Controllers\CarController;
 Route::resource('cars', CarController::class);
+
+Use App\Http\Controllers\TestDriveController;
+Route::resource('test_drives', TestDriveController::class);

@@ -46,6 +46,9 @@
             <li>
                 <a href="{{ route('cars.index') }}">Cars</a>
             </li>
+            <li>
+                <a href="{{ route('test_drives.index') }}">Test drives</a>
+            </li>
         </ul>
     </div>
 @endsection
