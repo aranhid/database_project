@@ -61,3 +61,6 @@ Route::resource('cars', CarController::class);
 
 Use App\Http\Controllers\TestDriveController;
 Route::resource('test_drives', TestDriveController::class);
+
+Use App\Http\Controllers\OrderController;
+Route::resource('orders', OrderController::class);
