@@ -19,6 +19,15 @@
             <li>
                 <a href="{{ route('car_models.index') }}">Car models</a>
             </li>
+            <li>
+                <a href="{{ route('car_generations.index') }}">Car generations</a>
+            </li>
+            <li>
+                <a href="{{ route('car_body_types.index') }}">Car body types</a>
+            </li>
+            <li>
+                <a href="{{ route('car_body_colors.index') }}">Car body colors</a>
+            </li>
         </ul>
     </div>
 @endsection
