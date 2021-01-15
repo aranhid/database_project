@@ -37,3 +37,6 @@ Route::resource('car_generations', CarGenerationController::class);
 
 Use App\Http\Controllers\CarBodyTypeController;
 Route::resource('car_body_types', CarBodyTypeController::class);
+
+Use App\Http\Controllers\CarBodyColorController;
+Route::resource('car_body_colors', CarBodyColorController::class);
