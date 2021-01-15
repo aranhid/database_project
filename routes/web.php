@@ -55,3 +55,6 @@ Route::resource('car_statuses', CarStatusController::class);
 
 Use App\Http\Controllers\CarStateController;
 Route::resource('car_states', CarStateController::class);
+
+Use App\Http\Controllers\CarController;
+Route::resource('cars', CarController::class);
