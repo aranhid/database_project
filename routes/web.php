@@ -31,3 +31,6 @@ Route::resource('car_manufacturers', CarManufacturerController::class);
 
 Use App\Http\Controllers\CarModelController;
 Route::resource('car_models', CarModelController::class);
+
+Use App\Http\Controllers\CarGenerationController;
+Route::resource('car_generations', CarGenerationController::class);
