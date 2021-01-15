@@ -52,3 +52,6 @@ Route::resource('fuel_types', FuelTypeController::class);
 
 Use App\Http\Controllers\CarStatusController;
 Route::resource('car_statuses', CarStatusController::class);
+
+Use App\Http\Controllers\CarStateController;
+Route::resource('car_states', CarStateController::class);

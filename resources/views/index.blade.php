@@ -40,6 +40,9 @@
             <li>
                 <a href="{{ route('car_statuses.index') }}">Car statuses</a>
             </li>
+            <li>
+                <a href="{{ route('car_states.index') }}">Car states</a>
+            </li>
         </ul>
     </div>
 @endsection
