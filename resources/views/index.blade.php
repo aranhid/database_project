@@ -37,6 +37,9 @@
             <li>
                 <a href="{{ route('fuel_types.index') }}">Fuel types</a>
             </li>
+            <li>
+                <a href="{{ route('car_statuses.index') }}">Car statuses</a>
+            </li>
         </ul>
     </div>
 @endsection
