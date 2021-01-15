@@ -52,10 +52,10 @@ class CarModelController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CarModel  $car_models
+     * @param  \App\Models\CarModel  $car_model
      * @return \Illuminate\Http\Response
      */
-    public function show(CarModel $car_models)
+    public function show(CarModel $car_model)
     {
         return view('car_models.show', compact('car_model'));
     }
@@ -63,7 +63,7 @@ class CarModelController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CarModel  $car_models
+     * @param  \App\Models\CarModel  $car_model
      * @return \Illuminate\Http\Response
      */
     public function edit(CarModel $car_model)
