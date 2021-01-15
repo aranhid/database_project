@@ -28,6 +28,9 @@
             <li>
                 <a href="{{ route('car_body_colors.index') }}">Car body colors</a>
             </li>
+            <li>
+                <a href="{{ route('car_drive_types.index') }}">Car drive types</a>
+            </li>
         </ul>
     </div>
 @endsection
