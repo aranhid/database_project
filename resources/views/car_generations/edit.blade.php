@@ -22,7 +22,15 @@
         </div>
         <div class="form-group">
             <strong>Model id:</strong>
-            <input type="text" name="model_id" value="{{ $carGeneration->model_id }}" class="form-control" placeholder="Model id">
+            <select name="model_id" class="form-select" aria-label="Default select example">
+                @foreach ($models as $model)
+                    <option value="{{ $model->id }}"
+                        @if ($model->id == $carGeneration->model_id)
+                            selected
+                        @endif
+                        >{{ $model->name }}</option>
+                @endforeach
+            </select>
         </div>
     </div>
 @endsection

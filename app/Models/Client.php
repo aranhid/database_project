@@ -21,10 +21,7 @@ class Client extends Model
         'birth_date',
     ];
 
-            
-            
-            
-            
-            
-            
+    public function orders() {
+        return $this->hasMany(Order::class);
+    }       
 }

@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Staff;
 use Illuminate\Http\Request;
 
+use App\Models\Position;
+
 class StaffController extends Controller
 {
     /**
@@ -27,7 +29,8 @@ class StaffController extends Controller
      */
     public function create()
     {
-        return view('staff.create');
+        $positions = Position::all();
+        return view('staff.create', compact('positions'));
     }
 
     /**
@@ -73,7 +76,8 @@ class StaffController extends Controller
      */
     public function edit(Staff $staff)
     {
-        return view('staff.edit', compact('staff'));
+        $positions = Position::all();
+        return view('staff.edit', compact(['staff', 'positions']));
     }
 
     /**

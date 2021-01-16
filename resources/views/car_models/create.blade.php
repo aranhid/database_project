@@ -18,7 +18,11 @@
         </div>
         <div class="form-group">
             <strong>Car manufacturer:</strong>
-            <input type="text" name="manufacturer_id" class="form-control" placeholder="name">
+            <select name="manufacturer_id" class="form-select" aria-label="Default select example">
+                @foreach ($manufacturers as $manufacturer)
+                    <option value="{{ $manufacturer->id }}">{{ $manufacturer->name }}</option>
+                @endforeach
+            </select>
         </div>
     </div>
 @endsection

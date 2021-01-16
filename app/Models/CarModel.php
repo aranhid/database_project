@@ -16,4 +16,8 @@ class CarModel extends Model
         'manufacturer_id',
         'name',
     ];
+
+    public function manufacturer() {
+        return $this->belongsTo(CarManufacturer::class);
+    }
 }

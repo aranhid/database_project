@@ -16,4 +16,8 @@ class CarGeneration extends Model
         'name',
         'model_id'
     ];
+
+    public function model() {
+        return $this->belongsTo(CarModel::class);
+    }
 }

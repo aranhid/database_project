@@ -26,7 +26,7 @@
                 <td>{{ $employee->firstname }}</td>
                 <td>{{ $employee->secondname }}</td>
                 <td>{{ $employee->lastname }}</td>
-                <td>{{ $employee->position_id }}</td>
+                <td>{{ $employee->position->name }}</td>
                 <td>{{ $employee->work_phone }}</td>
                 <td>{{ $employee->personal_phone }}</td>
                 <td>{{ $employee->birth_date }}</td>

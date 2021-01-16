@@ -21,4 +21,8 @@ class Staff extends Model
         'personal_phone',
         'birth_date',
     ];
+
+    public function position() {
+        return $this->belongsTo(Position::class);
+    }
 }

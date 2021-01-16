@@ -7,7 +7,7 @@
 @endsection
 
 @section('route_form')
-    {{ route('staff.update', $employee->id) }}
+    {{ route('staff.update', $staff->id) }}
 @endsection
 
 @section('form_method')
@@ -19,43 +19,51 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>First name:</strong>
-            <input type="text" name="firstname" value="{{ $employee->firstname }}" class="form-control" placeholder="Firstname">
+            <input type="text" name="firstname" value="{{ $staff->firstname }}" class="form-control" placeholder="Firstname">
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Second name:</strong>
-            <input type="text" name="secondname" value="{{ $employee->secondname }}" class="form-control" placeholder="Secondname">
+            <input type="text" name="secondname" value="{{ $staff->secondname }}" class="form-control" placeholder="Secondname">
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Last name:</strong>
-            <input type="text" name="lastname" value="{{ $employee->lastname }}" class="form-control" placeholder="Lastname">
+            <input type="text" name="lastname" value="{{ $staff->lastname }}" class="form-control" placeholder="Lastname">
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Position:</strong>
-            <input type="text" name="position_id" value="{{ $employee->position_id }}" class="form-control" placeholder="Position">
+            <select name="position_id" class="form-select" aria-label="Default select example">
+                @foreach ($positions as $position)
+                    <option value="{{ $position->id }}"
+                        @if ($position->id == $staff->position_id)
+                            selected
+                        @endif
+                        >{{ $position->name }}</option>
+                @endforeach
+            </select>
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Work phone:</strong>
-            <input type="text" name="work_phone" value="{{ $employee->work_phone }}" class="form-control" placeholder="Workphone">
+            <input type="text" name="work_phone" value="{{ $staff->work_phone }}" class="form-control" placeholder="Workphone">
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Personal phone:</strong>
-            <input type="text" name="personal_phone" value="{{ $employee->personal_phone }}" class="form-control" placeholder="Personalphone">
+            <input type="text" name="personal_phone" value="{{ $staff->personal_phone }}" class="form-control" placeholder="Personalphone">
         </div>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Birth date:</strong>
-            <input type="date" name="birth_date" value="{{ $employee->birth_date }}" class="form-control" placeholder="Birthdate">
+            <input type="date" name="birth_date" value="{{ $staff->birth_date }}" class="form-control" placeholder="Birthdate">
         </div>
     </div>
 @endsection

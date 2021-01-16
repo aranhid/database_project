@@ -17,7 +17,7 @@
         @foreach ($carGenerations as $carGeneration)
             <tr>
                 <td>{{ $carGeneration->id }}</td>
-                <td>{{ $carGeneration->model_id }}</td>
+                <td>{{ $carGeneration->model->name }}</td>
                 <td>{{ $carGeneration->name }}</td>
                 <td>
                     <form action="{{ route('car_generations.destroy', $carGeneration->id) }}" method="POST">

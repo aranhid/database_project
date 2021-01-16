@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\CarModel;
 use Illuminate\Http\Request;
 
+use App\Models\CarManufacturer;
+
 class CarModelController extends Controller
 {
     /**
@@ -27,7 +29,8 @@ class CarModelController extends Controller
      */
     public function create()
     {
-        return view('car_models.create');
+        $manufacturers = CarManufacturer::all();
+        return view('car_models.create', compact('manufacturers'));
     }
 
     /**
@@ -68,7 +71,8 @@ class CarModelController extends Controller
      */
     public function edit(CarModel $car_model)
     {
-        return view('car_models.edit', compact('car_model'));
+        $manufacturers = CarManufacturer::all();
+        return view('car_models.edit', compact(['car_model', 'manufacturers']));
     }
 
     /**

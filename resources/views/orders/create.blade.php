@@ -26,7 +26,7 @@
             <strong>Manager:</strong>
             <select name="manager_id" class="form-select" aria-label="Default select example">
                 @foreach ($managers as $manager)
-                    <option value="{{ $manager->id }}">{{ $manager->firstname }} {{ $manager->lastname }}</option>
+                    <option value="{{ $manager->id }}">{{ $manager->firstname }} {{ $manager->lastname }} - {{ $manager->position->name }}</option>
                 @endforeach
             </select>
         </div>

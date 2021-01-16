@@ -18,7 +18,7 @@
             <tr>
                 <td>{{ $carModel->id }}</td>
                 <td>{{ $carModel->name }}</td>
-                <td>{{ $carModel->manufacturer_id }}</td>
+                <td>{{ $carModel->manufacturer->name }}</td>
                 <td>
                     <form action="{{ route('car_models.destroy', $carModel->id) }}" method="POST">
                         @csrf
